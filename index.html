@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Light</title>
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- castom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="text-center my-3 fw-bold">Javascript Magic Light</h1>
+    </header>
+    <main>
+        <div id="imges-div" class="text-center">
+            <img id="bulb-off" class="images mx-auto" src="images/pic_bulboff.gif" alt="bulboff photo">
+            <img id="bulb-on" class="images mx-auto" src="images/pic_bulbon.gif" alt="bulbon photo">
+        </div>
+        <div class="text-center mt-4">
+            <button onclick="lightOnOfButton(true)" class=" btn text-white fw-bold bg-dark">Light On</button>
+            <button onclick="lightOnOfButton(false)" class=" btn text-white fw-bold bg-dark">Light Of</button>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

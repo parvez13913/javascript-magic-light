@@ -12,17 +12,21 @@
 </head>
 <body>
     <header>
-        <h1 class="text-center my-3 fw-bold">Javascript Magic Light</h1>
+        <h1 id="heading" class="text-center my-3 fw-bold">Javascript Magic Light</h1>
     </header>
     <main>
         <div id="imges-div" class="text-center">
-            <img id="bulb-off" class="images mx-auto" src="images/pic_bulboff.gif" alt="bulboff photo">
-            <img id="bulb-on" class="images mx-auto" src="images/pic_bulbon.gif" alt="bulbon photo">
+            <img id="bulb-off" class="images " src="images/pic_bulboff.gif" alt="bulboff photo">
+            <img id="bulb-on" class="images " src="images/pic_bulbon.gif" alt="bulbon photo">
         </div>
         <div class="text-center mt-4">
             <button id="on-button" onclick="lightOnOfButton(true)" class=" btn text-white fw-bold bg-dark">Light On</button>
             <button id="of-button" onclick="lightOnOfButton(false)" class=" btn text-white fw-bold bg-dark">Light Of</button>
-            <button id="vanish-button" onclick="vanishButton()" class=" btn text-white fw-bold bg-dark">Vanish</button>
+           <button id="vanish-button" onclick="vanishButton()" class=" btn text-white fw-bold bg-dark">Vanish</button>
+        </div>
+        <div class="text-center">
+            <p id="error-message" class="text-center mt-4 bg-dark text-white w-25 p-3 mx-auto rounded-pill">❌You clicked the vanish button.</p>
+            <img width="300px" id="error-img" src="images/error-photo.png" alt="">
         </div>
     </main>
 

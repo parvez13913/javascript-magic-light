@@ -3,6 +3,13 @@ body{
     margin: 0;
     padding: 0;
 }
-.images{
+#error-message{
+    display: none;
+}
+
+#bulb-on{
+    display: none;
+}
+#error-img{
     display: none;
 }

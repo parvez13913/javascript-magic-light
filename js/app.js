@@ -1,21 +1,35 @@
 const lightOnOfButton = on => {
     const lightOf = document.getElementById('bulb-off');
     const lightOn = document.getElementById("bulb-on");
-    const vanishButton = document.getElementById("vanish-button");
+    const onButton = document.getElementById("on-button");
+    const ofButton = document.getElementById("of-button");
     if(on === true){
-        lightOn.style.display = "block";
+        lightOn.style.display = "inline";
         lightOf.style.display = "none";
-        vanishButton.disabled = true;
+        onButton.disabled = true;
+        ofButton.disabled = false;
     }
     else{
-        lightOf.style.display = "block";
+        lightOf.style.display = "inline";
         lightOn.style.display = "none";
-        vanishButton.disabled = true;
+        ofButton.disabled = true;
+        onButton.disabled = false;
     }
 }
 const vanishButton = () => {
     const onButton = document.getElementById("on-button");
     const ofButton = document.getElementById("of-button");
+    const vanishButton = document.getElementById("vanish-button");
+    const lightOf = document.getElementById('bulb-off');
+    const heading = document.getElementById('heading');
     onButton.disabled = true;
     ofButton.disabled = true;
+    vanishButton.disabled = true;
+    lightOf.style.display = "none";
+    heading.style.display = "none";
+    // error message 
+    const errorMessage = document.getElementById("error-message");
+    errorMessage.style.display = "block";
+    const errorImages = document.getElementById("error-img");
+    errorImages.style.display = "inline";
 }

@@ -1,3 +1,7 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&family=Pacifico&family=Poppins:ital,wght@0,400;0,500;1,500;1,600&family=Source+Serif+4:ital@1&family=Yeseva+One&display=swap');
+
+
 /* common style */
 body{
     margin: 0;
@@ -12,4 +16,7 @@ body{
 }
 #error-img{
     display: none;
+}
+.hea-information{
+    color: #242B2E;
 }

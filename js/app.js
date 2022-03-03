@@ -12,8 +12,8 @@ const lightOnOfButton = on => {
     else{
         lightOf.style.display = "inline";
         lightOn.style.display = "none";
-        ofButton.disabled = true;
         onButton.disabled = false;
+        ofButton.disabled = true;
     }
 }
 const vanishButton = () => {
